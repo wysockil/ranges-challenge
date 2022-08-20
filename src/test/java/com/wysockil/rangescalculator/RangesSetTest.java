@@ -20,5 +20,12 @@ class RangesSetTest {
         assertEquals(rangeSet.countOfRanges(), 2);
     }
 
+    @Test
+    public void shouldCountNonTouchingRangesWithCommonPart() {
+        collectRanges(new Range(1, 3), new Range(2, 4), new Range(5, 6), new Range(7, 8));
+
+        assertEquals(rangeSet.countOfRanges(), 3);
+    }
+
 
 }
