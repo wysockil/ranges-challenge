@@ -1,7 +1,7 @@
 package com.wysockil.rangescalculator;
 
-import java.util.List;
+import java.util.Set;
 
 public interface RangesCalculator {
-    int count(List<Range> ranges);
+    int count(Set<Range> ranges);
 }
