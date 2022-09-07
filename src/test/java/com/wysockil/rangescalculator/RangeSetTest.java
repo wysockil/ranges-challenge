@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import static com.google.common.collect.Sets.newHashSet;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RangesSetTest {
+class RangeSetTest {
 
-    private RangesSet rangeSet;
+    private RangeSet rangeSet;
 
     private void collectRanges(Range... ranges) {
-        rangeSet = new RangesSet(newHashSet(ranges), new RangesCalculatorImpl());
+        rangeSet = new RangeSet(newHashSet(ranges), new RangesCalculatorImpl());
     }
 
     @Test
